@@ -26,11 +26,12 @@ repositories {
 
 dependencyManagement {
     imports {
-		mavenBom('dillos:dillos-gradle-version-plugin:0.0.1-SNAPSHOT')
+		mavenBom('dillos:dillos-gradle-version-plugin:0.0.2-SNAPSHOT')
     }
 }
 
 dependencies {
+    implementation 'org.apache.poi:poi'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
